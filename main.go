@@ -13,5 +13,8 @@ func fib(i int) int {
 }
 
 func main() {
-	fmt.Println(fib(45))
+	var i int
+	fmt.Scanf("%d", &i)
+
+	fmt.Println(fib(i))
 }
