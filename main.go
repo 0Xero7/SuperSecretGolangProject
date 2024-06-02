@@ -2,11 +2,16 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
-func main() {
-	for i := range 10 {
-		fmt.Println(strings.Repeat("* ", i+1))
+func fib(i int) int {
+	if i <= 0 {
+		return 1
 	}
+
+	return fib(i-1) + fib(i-2)
+}
+
+func main() {
+	fmt.Println(fib(45))
 }
