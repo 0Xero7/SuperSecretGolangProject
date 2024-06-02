@@ -5,7 +5,10 @@ import (
 )
 
 func fib(i int) int {
-	if i <= 0 {
+	if i <= 1 {
+		return 0
+	}
+	if i == 2 {
 		return 1
 	}
 
@@ -16,7 +19,7 @@ func main() {
 	var q int
 	fmt.Scanf("%d", &q)
 
-	for _ = range q {
+	for range q {
 		var t int
 		fmt.Scanf("%d", &t)
 		fmt.Println(fib(t))
