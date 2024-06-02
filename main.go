@@ -13,8 +13,8 @@ func fib(i int) int {
 }
 
 func main() {
-	var i int
-	fmt.Scanf("%d", &i)
+	var i string
+	fmt.Scanf("%s", &i)
 
-	fmt.Println(fib(i))
+	fmt.Println(i)
 }
