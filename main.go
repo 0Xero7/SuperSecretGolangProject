@@ -13,8 +13,12 @@ func fib(i int) int {
 }
 
 func main() {
-	var i int
-	fmt.Scanf("%d", &i)
+	var q int
+	fmt.Scanf("%d", &q)
 
-	fmt.Println(fib(i))
+	for _ = range q {
+		var t int
+		fmt.Scanf("%d", &t)
+		fmt.Println(fib(t))
+	}
 }
