@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/oklog/ulid/v2"
 )
 
 func fib(i int) int {
@@ -18,6 +20,9 @@ func fib(i int) int {
 func main() {
 	var q int
 	fmt.Scanf("%d", &q)
+
+	u := ulid.Make()
+	fmt.Println(u.String())
 
 	for range q {
 		var t int
